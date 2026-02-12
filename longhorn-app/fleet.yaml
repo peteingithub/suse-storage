@@ -2,7 +2,7 @@ defaultNamespace: longhorn-system
 
 # This ensures Fleet installs the 'longhorn-crd' bundle first
 dependsOn:
-  - name: longhorn-crd 
+  - name: suse-storage-longhorn-crd 
 
 helm:
   repo: https://charts.rancher.io
