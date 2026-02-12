@@ -1,5 +1,12 @@
 defaultNamespace: longhorn-system
 helm:
+  repo: https://charts.rancher.io
+  chart: longhorn-crd  # <--- Install CRDs first
+  version: 108.2.1+up1.10.2
+  releaseName: longhorn-crd
+---
+defaultNamespace: longhorn-system
+helm:
   repo: https://charts.rancher.io               
   #https://charts.longhorn.io
   chart: longhorn
