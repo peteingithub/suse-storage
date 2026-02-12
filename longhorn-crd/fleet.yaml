@@ -1,0 +1,9 @@
+defaultNamespace: longhorn-system
+helm:
+  repo: https://charts.rancher.io
+  chart: longhorn-crd
+  version: 108.2.1+up1.10.2
+  releaseName: longhorn-crd
+  
+  # Important: Wait for CRDs to be fully established before marking success
+  waitForJob: true
